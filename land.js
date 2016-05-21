@@ -15,8 +15,9 @@
 
 <div id='map'></div>
 <script>
+var mapboxgl = require('mapbox-gl');
 mapboxgl.accessToken = 'pk.eyJ1IjoiZmFybWxhbmQiLCJhIjoiY2lscHk0cHRlMDhrcHRya244bDI3Mjg0OCJ9.Na_WX8j6qqdeNI5dqfi_gA';
-var map = new mapboxgl.Map({
+var map = farmland({
     container: 'map',
     zoom: 9,
     center: [137.9150899566626, 36.25956997955441],
